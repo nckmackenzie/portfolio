@@ -18,11 +18,12 @@ module.exports = {
         //grays
         'grayish-light': '#E5E5E5',
         'grayish-dark': '#111827',
+        'grayish-dark-card': '#414652',
       },
     },
     fontFamily: {
       headings: ['Merriweather', 'serif'],
-      bodytext: ['Lato', 'sans-serif'],
+      bodytext: ['Inter', 'sans-serif'],
     },
   },
   plugins: [],
