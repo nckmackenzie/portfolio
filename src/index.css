@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:ital,wght@0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+  .btn-primary {
+    @apply inline-flex justify-center rounded-md border border-transparent bg-primary-400 py-2 px-4 text-sm font-medium text-accent-800 shadow-sm hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+  }
+  .btn-sm-block {
+    @apply w-full md:w-1/2;
+  }
+  .nav-item {
+    @apply text-sm font-normal lg:text-base font-bodytext hover:text-accent-400;
+  }
+}
