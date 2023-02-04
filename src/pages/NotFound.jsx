@@ -24,7 +24,7 @@ function NotFound() {
           The page you are trying to access is currently unavailable.{' '}
         </p>
         <div className="lg:center">
-          <Link to="/" className="btn-primary btn-sm-block ">
+          <Link to="/" className="btn btn-primary btn-sm-block ">
             &larr; Home
           </Link>
         </div>
