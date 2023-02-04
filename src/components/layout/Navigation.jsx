@@ -8,7 +8,7 @@ import NavItem from './NavItem';
 function Navigation() {
   const { textClr, isDarkMode, toogleTheme } = useTheme();
   return (
-    <header className="py-2 lg:p-4 flex items-center justify-between">
+    <header className="py-2 lg:py-4 flex items-center justify-between">
       <Link to="/">
         <h2
           className={`font-headings ${
