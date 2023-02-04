@@ -13,6 +13,9 @@
   .btn-primary {
     @apply bg-primary-400 text-accent-800 hover:bg-primary-600 focus:ring-primary-600;
   }
+  .btn-outline {
+    @apply border-primary-400 text-accent-800 hover:bg-primary-400 focus:ring-primary-400;
+  }
   .btn-sm-block {
     @apply w-full md:w-1/2;
   }
