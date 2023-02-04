@@ -31,7 +31,7 @@ function Navigation() {
           <AiOutlineMenu />
         </button>
         <button
-          className={`inline-flex px-2 py-1 text-lg ${textClr}`}
+          className={`inline-flex px-2 py-1 outline-none text-lg ${textClr}`}
           onClick={toogleTheme}
         >
           {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
