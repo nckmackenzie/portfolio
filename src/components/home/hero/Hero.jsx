@@ -3,6 +3,7 @@ import { useTheme } from '../../../context/ThemeProvider';
 import useMediaQuery from '../../../hooks/use-media-query';
 import desktopImage from '../../../assets/images/placeholder_desktop.png';
 import mobileImage from '../../../assets/images/placeholder_mobile.png';
+import { Button } from '../../ui';
 
 function Hero() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -23,14 +24,17 @@ function Hero() {
           aliquid asperiores.
         </p>
         <div className="flex gap-4">
-          <button className="btn btn-primary flex items-center gap-2">
+          <Button variant="Contained" className="flex items-center gap-2">
             <span className="inline-block">Hire me</span>
             <AiOutlineMail size={16} />
-          </button>
-          <button className="btn btn-outline flex items-center gap-2">
+          </Button>
+          <Button
+            variant="Outlined"
+            className={`flex items-center gap-2 ${textClr}`}
+          >
             <span className="inline-block">Download CV</span>
             <AiOutlineCloudDownload size={16} />
-          </button>
+          </Button>
         </div>
       </div>
       <img
