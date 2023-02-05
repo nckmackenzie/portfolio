@@ -10,13 +10,13 @@ const themeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   // colors
   const appBg = isDarkMode ? 'bg-grayish-dark' : 'bg-grayish-light';
   const cardBg = isDarkMode ? 'bg-grayish-dark-card' : 'bg-white';
   const textClr = isDarkMode ? 'text-grayish-light' : 'text-grayish-dark';
-  const paragraphText = isDarkMode ? 'text-gray-50' : 'text-gray-700';
+  const paragraphText = isDarkMode ? 'text-gray-400' : 'text-gray-700';
 
   //   toggle theme
   const toogleTheme = () => {
