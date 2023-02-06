@@ -6,7 +6,7 @@ function Filters({ categories, selectedCategory, setSelectedCategory }) {
     setSelectedCategory(String(e.target.textContent).toLowerCase());
   };
   return (
-    <div className="flex items-center justify-center gap-4">
+    <div className="flex items-center justify-center gap-4 mb-6">
       {categories &&
         categories?.map(category => (
           <div
