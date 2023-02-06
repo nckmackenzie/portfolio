@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { projects } from '../../../data/data';
 import { Section } from '../../ui';
 import Filters from './Filters';
+import Portfolios from './Portfolios';
 
 const projectCategories = projects.map(project => project.type);
 const categories = [...new Set(['All', ...projectCategories])];
@@ -20,6 +21,7 @@ function Projects() {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
+      <Portfolios />
     </Section>
   );
 }
