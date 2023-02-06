@@ -1,3 +1,10 @@
+import {
+  AiOutlineTwitter,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+} from 'react-icons/ai';
+import { SiFrontendmentor } from 'react-icons/si';
+
 export const links = [
   {
     name: 'Services',
@@ -481,4 +488,27 @@ export const services = [
   { name: 'Desktop Application', description: 'Customized Apps,POS' },
   { name: 'API Programming', description: 'Secure Restful API' },
   { name: 'Digital Marketing', description: 'SEO,Social Media Marketing' },
+];
+
+export const followMe = [
+  {
+    name: 'github',
+    link: 'https://github.com/nckmackenzie',
+    icon: <AiOutlineGithub size={24} />,
+  },
+  {
+    name: 'twitter',
+    link: 'https://twitter/nicmackenzie',
+    icon: <AiOutlineTwitter size={24} />,
+  },
+  {
+    name: 'linkedin',
+    link: 'https://github.com/nckmackenzie',
+    icon: <AiOutlineLinkedin size={24} />,
+  },
+  {
+    name: 'frontend mentor',
+    link: 'https://www.frontendmentor.io/profile/nckmackenzie',
+    icon: <SiFrontendmentor size={24} />,
+  },
 ];
