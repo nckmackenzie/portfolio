@@ -18,7 +18,7 @@ export const ThemeProvider = ({ children }) => {
   const cardBg = isDarkMode ? 'bg-grayish-dark-card' : 'bg-white';
   const textClr = isDarkMode ? 'text-grayish-light' : 'text-grayish-dark';
   const paragraphText = isDarkMode ? 'text-gray-400' : 'text-gray-700';
-  const sectionTitle = isDarkMode ? 'text-primary-200' : 'text-accent-800';
+  const sectionTitle = isDarkMode ? 'text-primary-200' : 'text-primary-800';
 
   //   toggle theme
   const toogleTheme = () => {
