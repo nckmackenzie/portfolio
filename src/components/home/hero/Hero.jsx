@@ -4,6 +4,7 @@ import useMediaQuery from '../../../hooks/use-media-query';
 import desktopImage from '../../../assets/images/placeholder_desktop.png';
 import mobileImage from '../../../assets/images/placeholder_mobile.png';
 import { Button } from '../../ui';
+import FollowMe from './FollowMe';
 
 function Hero() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -23,7 +24,7 @@ function Hero() {
           esse sint repellat cupiditate rerum velit ducimus quos corrupti
           aliquid asperiores.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 mb-8 lg:mb-12">
           <Button variant="Contained" className="flex items-center gap-2">
             <span className="inline-block">Hire me</span>
             <AiOutlineMail size={16} />
@@ -36,6 +37,7 @@ function Hero() {
             <AiOutlineCloudDownload size={16} />
           </Button>
         </div>
+        <FollowMe />
       </div>
       <img
         src={isDesktop ? desktopImage : mobileImage}
