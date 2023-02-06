@@ -21,13 +21,13 @@ function Section({
   return (
     <section className={`${padding} ${className ? className : ''}`} id={id}>
       <h4
-        className={`text-center text-lg md:text-2xl font-headings font-semibold ${sectionTitle}`}
+        className={`text-center text-xl md:text-3xl font-headings font-bold ${sectionTitle}`}
       >
         {title}
       </h4>
       {description && (
         <p
-          className={`text-center text-sm max-w-md mx-auto mt-2 ${paragraphText}`}
+          className={`text-center text-sm max-w-md mx-auto mt-2 mb-8 ${paragraphText}`}
         >
           {description}
         </p>
