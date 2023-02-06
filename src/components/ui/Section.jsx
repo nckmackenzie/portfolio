@@ -6,9 +6,10 @@ function Section({
   smPadding,
   mdPadding,
   lgPadding,
+  description,
   children,
 }) {
-  const { sectionTitle } = useTheme();
+  const { sectionTitle, paragraphText } = useTheme();
   const padding = smPadding
     ? 'py-9 md:pt-12 md:pb-9'
     : mdPadding
@@ -23,6 +24,13 @@ function Section({
       >
         {title}
       </h4>
+      {description && (
+        <p
+          className={`text-center text-sm max-w-md mx-auto mt-2 ${paragraphText}`}
+        >
+          {description}
+        </p>
+      )}
       {children}
     </section>
   );
