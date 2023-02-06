@@ -21,7 +21,7 @@ function Projects() {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <Portfolios />
+      <Portfolios projects={projects} />
     </Section>
   );
 }
