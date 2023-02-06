@@ -6,6 +6,7 @@ const themeContext = createContext({
   cardBg: '',
   textClr: '',
   paragraphText: '',
+  sectionTitle: '',
   toogleTheme: () => {},
 });
 
@@ -17,6 +18,7 @@ export const ThemeProvider = ({ children }) => {
   const cardBg = isDarkMode ? 'bg-grayish-dark-card' : 'bg-white';
   const textClr = isDarkMode ? 'text-grayish-light' : 'text-grayish-dark';
   const paragraphText = isDarkMode ? 'text-gray-400' : 'text-gray-700';
+  const sectionTitle = isDarkMode ? 'text-primary-200' : 'text-accent-800';
 
   //   toggle theme
   const toogleTheme = () => {
@@ -25,7 +27,15 @@ export const ThemeProvider = ({ children }) => {
 
   return (
     <themeContext.Provider
-      value={{ isDarkMode, appBg, cardBg, textClr, paragraphText, toogleTheme }}
+      value={{
+        isDarkMode,
+        appBg,
+        cardBg,
+        textClr,
+        paragraphText,
+        toogleTheme,
+        sectionTitle,
+      }}
     >
       {children}
     </themeContext.Provider>
