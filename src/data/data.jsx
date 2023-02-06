@@ -4,6 +4,16 @@ import {
   AiOutlineLinkedin,
 } from 'react-icons/ai';
 import { SiFrontendmentor } from 'react-icons/si';
+import html5 from '../assets/html5_icon.svg';
+import css3 from '../assets/css3_icon.svg';
+import js from '../assets/js_icon.svg';
+import react from '../assets/react.svg';
+import tailwindcss from '../assets/tailwind_icon.svg';
+import bootstrap4 from '../assets/bootstrap_4_icon.svg';
+import git from '../assets/git_icon.svg';
+import php from '../assets/php_icon.svg';
+import nodejs from '../assets/nodejs_icon.svg';
+import csharp from '../assets/csharp_icon.svg';
 
 export const links = [
   {
@@ -511,4 +521,17 @@ export const followMe = [
     link: 'https://www.frontendmentor.io/profile/nckmackenzie',
     icon: <SiFrontendmentor size={24} />,
   },
+];
+
+export const myTechStacks = [
+  { stack: 'html5', icon: html5 },
+  { stack: 'css3', icon: css3 },
+  { stack: 'js', icon: js },
+  { stack: 'react', icon: react },
+  { stack: 'tailwindcss', icon: tailwindcss },
+  { stack: 'bootstrap', icon: bootstrap4 },
+  { stack: 'git', icon: git },
+  { stack: 'php', icon: php },
+  { stack: 'nodejs', icon: nodejs },
+  { stack: 'csharp', icon: csharp },
 ];
