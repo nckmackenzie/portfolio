@@ -2,6 +2,8 @@ import { useTheme } from '../context/ThemeProvider';
 import Navigation from '../components/layout/Navigation';
 import Hero from '../components/home/hero/Hero';
 import TechStack from '../components/home/techstack/TechStack';
+import Services from '../components/home/services/Services';
+import Projects from '../components/home/projects/Projects';
 
 function Home() {
   const { appBg } = useTheme();
@@ -11,6 +13,8 @@ function Home() {
         <Navigation />
         <Hero />
         <TechStack />
+        <Services />
+        <Projects />
       </div>
     </div>
   );
