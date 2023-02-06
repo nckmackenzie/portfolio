@@ -7,6 +7,7 @@ function Section({
   mdPadding,
   lgPadding,
   description,
+  id,
   children,
 }) {
   const { sectionTitle, paragraphText } = useTheme();
@@ -18,7 +19,7 @@ function Section({
     ? 'pt-14 pb-9 md:pt-16'
     : '';
   return (
-    <section className={`${padding} ${className ? className : ''}`}>
+    <section className={`${padding} ${className ? className : ''}`} id={id}>
       <h4
         className={`text-center text-lg md:text-2xl font-headings font-semibold ${sectionTitle}`}
       >
