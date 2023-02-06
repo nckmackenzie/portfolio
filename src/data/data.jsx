@@ -2,8 +2,12 @@ import {
   AiOutlineTwitter,
   AiOutlineGithub,
   AiOutlineLinkedin,
+  AiOutlineApi,
 } from 'react-icons/ai';
 import { SiFrontendmentor } from 'react-icons/si';
+import { HiOutlineSpeakerphone } from 'react-icons/hi';
+import { CiDesktop } from 'react-icons/ci';
+import { BsCodeSlash } from 'react-icons/bs';
 import html5 from '../assets/html5_icon.svg';
 import css3 from '../assets/css3_icon.svg';
 import js from '../assets/js_icon.svg';
@@ -17,12 +21,12 @@ import csharp from '../assets/csharp_icon.svg';
 
 export const links = [
   {
-    name: 'Services',
-    to: '#services',
+    name: 'Tech Stack',
+    to: '#techstack',
   },
   {
-    name: 'About',
-    to: '#about',
+    name: 'Services',
+    to: '#services',
   },
   {
     name: 'Projects',
@@ -494,10 +498,26 @@ export const extraSkills = [
 ];
 
 export const services = [
-  { name: 'Web Development', description: 'Web Apps,Websites,Blogs' },
-  { name: 'Desktop Application', description: 'Customized Apps,POS' },
-  { name: 'API Programming', description: 'Secure Restful API' },
-  { name: 'Digital Marketing', description: 'SEO,Social Media Marketing' },
+  {
+    name: 'Web Development',
+    icon: <BsCodeSlash size={48} />,
+    description: 'Web Apps,Websites,Blogs',
+  },
+  {
+    name: 'Desktop Application',
+    icon: <CiDesktop size={48} />,
+    description: 'Customized Apps,POS',
+  },
+  {
+    name: 'API Programming',
+    icon: <AiOutlineApi size={48} />,
+    description: 'Secure Restful API',
+  },
+  {
+    name: 'Digital Marketing',
+    icon: <HiOutlineSpeakerphone size={48} />,
+    description: 'SEO,Social Media Marketing',
+  },
 ];
 
 export const followMe = [
