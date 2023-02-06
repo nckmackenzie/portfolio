@@ -22,4 +22,8 @@
   .nav-item {
     @apply text-sm font-normal lg:text-base font-bodytext hover:text-accent-400;
   }
+
+  .category {
+    @apply text-sm font-semibold uppercase  cursor-pointer transition-all hover:text-primary-400;
+  }
 }
