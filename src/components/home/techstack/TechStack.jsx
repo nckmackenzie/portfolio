@@ -10,7 +10,7 @@ function TechStack() {
       description="Technologies i have been working with lately."
       id="techstack"
     >
-      <div className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8">
+      <div className="md:mt-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8">
         {myTechStacks.length > 0 &&
           myTechStacks.map(stack => (
             <Stack key={stack.stack} icon={stack.icon} />
