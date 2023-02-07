@@ -41,6 +41,7 @@ export const links = [
 export const projects = [
   {
     project: 'Sacco Management',
+    to: 'sacco-management',
     description:
       'A computerized system that is used to manage the operations of a Savings and Credit Cooperative Organization (SACCO). These operations includes,Member information management,Loan management,savings management, ensure sensitive information is protected and provide with all relevant management and financial reports.',
     clients: ['Niinue Nikuinue Sacco'],
@@ -78,6 +79,7 @@ export const projects = [
   },
   {
     project: 'School Management',
+    to: 'school-management',
     description:
       'An application to help with school running operations including student management,fees management,send fee balances reminders to parents/guardians and provide all relevant reports on fee payments and collections and other financial reports.',
     clients: ['PCEA ST Paul Education Center', 'Tilta Golden Heart'],
@@ -119,6 +121,7 @@ export const projects = [
   },
   {
     project: 'Property Management',
+    to: 'property-management',
     description:
       'A system that helps in property management operations including member management,project and unit management,selling of units,collection of shares,deposits and unit payments, member statement generation,bank reconcilliation and provide all relevant financial and management reports.',
     clients: ['PCEA Housing Cooperative Housing Ltd'],
@@ -157,6 +160,7 @@ export const projects = [
   },
   {
     project: 'Church Management',
+    to: 'church-management',
     description:
       'A desktop application that provides a complete church management solution. It includes membership tracking, envelope collection processing, expenditure and helps to address every aspect of church finances and church membership activities.',
     clients: ['PCEA Macedonia Church'],
@@ -192,6 +196,7 @@ export const projects = [
   },
   {
     project: 'Church Management - Web',
+    to: 'church-management-web',
     description:
       'A web based application that provides a complete church management solution. It includes membership tracking, envelope collection processing, expenditure and helps to address every aspect of church finances and church membership activities and offers ability to communicate with church members through SMSs',
     clients: [
@@ -241,6 +246,7 @@ export const projects = [
   },
   {
     project: 'Web Based POS',
+    to: 'web-based-pos',
     description:
       'An application for retail that allows business to process payments,track inventory levels,manage customers,track sales and generate various reports on stock movement,supplier payments and their respective balances,sales reports and many more.',
     clients: ['Simtech Office Solutions', 'Hastings Tyres'],
@@ -278,6 +284,7 @@ export const projects = [
   },
   {
     project: 'Customized Web App',
+    to: 'customized-web-app',
     description:
       'A customized web app that will help the institution manage its operations such as Exam creation,marking and assigning of exam points in different categories and studies,track inventory movement,handle sales,fee structure creation by class and semister,fee collections,banking transactions and reconcilliation and generate all respective reports on all transactions.',
     clients: ['PCEA Theology By Extension'],
@@ -317,6 +324,7 @@ export const projects = [
   },
   {
     project: 'Water Billing',
+    to: 'water-billing',
     description:
       'An application that is used to handle all water billing operations like capturing of meter readings per customers,collection of bill payments,sending of bill breakdown to each customer at the end of every month,generate customer statements,handle water sales,expense capturing and generation of all their respective reports.',
     clients: ['PCEA ST Paul Water Project'],
@@ -353,6 +361,7 @@ export const projects = [
   },
   {
     project: 'PKL Website',
+    to: 'pkl-website',
     description:
       'The official website for Panesars Kenya Ltd that showcases its bespoke furniture and joinery,the various services offered by the company,image gallery of various bespoke furnitures in their respective rooms, information on the company history and its values,company contact information and its location on the map and many more.',
     clients: ['Panesars Kenya Ltd'],
@@ -380,6 +389,7 @@ export const projects = [
   },
   {
     project: 'PHCSL Website',
+    to: 'phcsl-website',
     description:
       'The official website for PCEA Housing Co-operative Society Ltd that showcases its active projects,number of unsold units remaining for each active projects, information on the company history and its values,membership information, company contact information and its location on the map and many more.',
     clients: ['PCEA Housing Cooperative Housing Ltd'],
@@ -406,6 +416,7 @@ export const projects = [
   },
   {
     project: 'Panesar Center Landing Page',
+    to: 'panesar-center-landing-page',
     description:
       'The official landing for Panesar Centre that seeks to give potential tenants a brief overview of the building and give them the ability to reach out for enquires on leasing. It includes an image gallery of various office spaces, contact information and its location on the map.',
     clients: ['Panesar Limited'],
@@ -440,6 +451,7 @@ export const projects = [
   },
   {
     project: 'Shelves & Lockers',
+    to: 'shelves-lockers',
     description:
       'An appliction that simplies the complex shelf renting and management of products by its particular customer and shelf,sale of these products,inventory tracking by product and by customer, collection of rent paid for the shelves,tracking of balances for shelves by period, expense capturing and generation of all respective reports.',
     clients: ['Style Africana'],
