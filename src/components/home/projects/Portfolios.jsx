@@ -9,6 +9,8 @@ function Portfolios({ projects }) {
           icon={project.imageUrl}
           project={project.project}
           description={project.description}
+          tags={project.languages}
+          to={project.to}
         />
       ))}
     </div>
