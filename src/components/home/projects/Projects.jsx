@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { useTheme } from '../../../context/ThemeProvider';
 import { projects } from '../../../data/data';
 import { Section } from '../../ui';
@@ -8,8 +8,20 @@ import Portfolios from './Portfolios';
 const projectCategories = projects.map(project => project.type);
 const categories = [...new Set(['All', ...projectCategories])];
 function Projects() {
-  //   const { textClr } = useTheme();
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [portfolios, setPortfolios] = useState([]);
+
+  useEffect(() => {
+    setPortfolios(projects);
+  }, []);
+
+  const filteredPortolios =
+    selectedCategory === 'all'
+      ? projects
+      : portfolios.filter(
+          portfolio => String(portfolio.type).toLowerCase() === selectedCategory
+        );
+
   return (
     <Section
       title="Portfolio"
@@ -21,7 +33,7 @@ function Projects() {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <Portfolios projects={projects} />
+      <Portfolios projects={filteredPortolios} />
     </Section>
   );
 }
