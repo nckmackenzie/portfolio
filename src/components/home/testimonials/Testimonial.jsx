@@ -1,8 +1,7 @@
 import { useTheme } from '../../../context/ThemeProvider';
 import { Card } from '../../ui';
-import userAvatar from '../../../assets/images/80.jpg';
 
-function Testimonial({ name, review, position }) {
+function Testimonial({ name, review, position, avatar }) {
   const { isDarkMode, paragraphText } = useTheme();
   return (
     <Card
@@ -13,7 +12,7 @@ function Testimonial({ name, review, position }) {
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-4">
           <img
-            src={userAvatar}
+            src={avatar}
             alt="client avatar"
             className="w-8 h-8 rounded-full text-primary-400"
           />
