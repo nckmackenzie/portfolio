@@ -33,6 +33,10 @@ export const links = [
     to: '#projects',
   },
   {
+    name: 'Testimonials',
+    to: '#testimonials',
+  },
+  {
     name: 'Contact',
     to: '#contact',
   },
