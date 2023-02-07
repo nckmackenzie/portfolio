@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
-// import { useTheme } from '../../../context/ThemeProvider';
-import { projects } from '../../../data/data';
 import { Section } from '../../ui';
 import Filters from './Filters';
 import Portfolios from './Portfolios';
 
-const projectCategories = projects.map(project => project.type);
-const categories = [...new Set(['All', ...projectCategories])];
-function Projects() {
+function Projects({ projects }) {
+  const projectCategories = projects.map(project => project.type);
+  const categories = [...new Set(['All', ...projectCategories])];
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [portfolios, setPortfolios] = useState([]);
 
