@@ -71,7 +71,7 @@ export const projects = [
       'Database backup and restore.',
     ],
     yearDeveloped: 2019,
-    clientReview: [
+    clientReviews: [
       {
         review:
           'The project was completed on the specified timeline and there was a good communication with the developer as he interacted with us to get to know more on how our sacco works so at to give us the best solution. He delivered what we were looking for and his support has been great even after development.',
@@ -389,7 +389,15 @@ export const projects = [
       'Contact and social media integration.',
     ],
     yearDeveloped: 2021,
-    clientReviews: [],
+    clientReviews: [
+      {
+        review:
+          'Hired to create a website with mostly stock images and information. Delivered before due date. Product met expectorations and he guaranteed an additional 60 days of editing, which is nice. I would recommend hiring and would consider hiring again for a future project.',
+        name: 'Vir Panesar',
+        position: 'COO - Panesars Kenya Ltd',
+        contact: '0725 447895',
+      },
+    ],
   },
   {
     project: 'PHCSL Website',
@@ -416,7 +424,15 @@ export const projects = [
       'Contact and social media integration.',
     ],
     yearDeveloped: 2020,
-    clientReviews: [],
+    clientReviews: [
+      {
+        review:
+          'Their service is wonderful, created a beautiful website for me, and was able to answer all of my questions. 5 stars for his services, will be using them again in the future',
+        name: 'Benjamin Harun',
+        position: 'Secretary - PCEA Housing Cooperative Housing Ltd',
+        contact: '0724449179',
+      },
+    ],
   },
   {
     project: 'Panesar Center Landing Page',
