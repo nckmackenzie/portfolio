@@ -1,7 +1,7 @@
 import { useTheme } from '../../../context/ThemeProvider';
-import { Card } from '../../ui';
+import { Card, Rating } from '../../ui';
 
-function Testimonial({ name, review, position, avatar }) {
+function Testimonial({ name, review, position, avatar, rating }) {
   const { isDarkMode, paragraphText } = useTheme();
   return (
     <Card
@@ -34,6 +34,7 @@ function Testimonial({ name, review, position, avatar }) {
           </div>
         </div>
         <p className={`text-xs ${paragraphText}`}>{review}</p>
+        <Rating rating={rating} />
       </div>
     </Card>
   );
