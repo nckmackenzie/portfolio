@@ -41,7 +41,7 @@ export const links = [
 export const projects = [
   {
     project: 'Sacco Management',
-    desctiption:
+    description:
       'A computerized system that is used to manage the operations of a Savings and Credit Cooperative Organization (SACCO). These operations includes,Member information management,Loan management,savings management, ensure sensitive information is protected and provide with all relevant management and financial reports.',
     clients: ['Niinue Nikuinue Sacco'],
     type: 'Desktop App',
