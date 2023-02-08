@@ -3,11 +3,12 @@ import {
   AiOutlineGithub,
   AiOutlineLinkedin,
   AiOutlineApi,
+  AiOutlineMail,
 } from 'react-icons/ai';
 import { SiFrontendmentor } from 'react-icons/si';
 import { HiOutlineSpeakerphone } from 'react-icons/hi';
 import { CiDesktop } from 'react-icons/ci';
-import { BsCodeSlash } from 'react-icons/bs';
+import { BsCodeSlash, BsMap, BsPhone } from 'react-icons/bs';
 import html5 from '../assets/html5_icon.svg';
 import css3 from '../assets/css3_icon.svg';
 import js from '../assets/js_icon.svg';
@@ -614,4 +615,31 @@ export const myTechStacks = [
   { stack: 'php', icon: php },
   { stack: 'nodejs', icon: nodejs },
   { stack: 'csharp', icon: csharp },
+];
+
+export const contactInfo = [
+  {
+    id: 1,
+    icon: <BsMap size={16} />,
+    details: [
+      { name: 'Country', value: 'Kenya' },
+      { name: 'City', value: 'Nairobi' },
+    ],
+  },
+  {
+    id: 2,
+    icon: <AiOutlineMail size={16} />,
+    details: [
+      { name: 'Email', value: 'nicmackenzie@live.com' },
+      { name: 'Twitter', value: '@nckmackenzie' },
+    ],
+  },
+  {
+    id: 3,
+    icon: <BsPhone size={16} />,
+    details: [
+      { name: 'Phone', value: '+254724466628' },
+      { name: 'WhatsApp', value: '+254724466628' },
+    ],
+  },
 ];
