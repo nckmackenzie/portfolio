@@ -17,7 +17,7 @@
     @apply border-primary-400 text-accent-800 hover:bg-primary-400 focus:ring-primary-400;
   }
   .btn-sm-block {
-    @apply w-full md:w-1/2;
+    @apply w-full md:w-max;
   }
   .nav-item {
     @apply text-sm font-normal lg:text-base font-bodytext hover:text-accent-400;
