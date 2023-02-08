@@ -6,6 +6,9 @@ import Services from '../components/home/services/Services';
 import Projects from '../components/home/projects/Projects';
 import Testimonials from '../components/home/testimonials/Testimonials';
 import { projects } from '../data/data';
+import Contact from '../components/home/contact/Contact';
+import { AlertProvider } from '../context/AlertProvider';
+import Footer from '../components/home/footer/Footer';
 
 function Home() {
   const { appBg } = useTheme();
@@ -19,7 +22,11 @@ function Home() {
         <Services />
         <Projects projects={projects} />
         <Testimonials projects={projects} />
+        <AlertProvider>
+          <Contact />
+        </AlertProvider>
       </div>
+      <Footer />
     </div>
   );
 }
