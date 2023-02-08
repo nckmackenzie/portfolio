@@ -1,6 +1,7 @@
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import { useTheme } from '../../../context/ThemeProvider';
 import { followMe } from '../../../data/data';
+import { Container } from '../../ui';
 import FollowLink from '../hero/FollowLink';
 
 function Footer() {
@@ -14,7 +15,7 @@ function Footer() {
         isDarkMode ? 'bg-slate-800' : 'bg-white'
       } py-6 lg:py-8`}
     >
-      <div className="container">
+      <Container>
         <div className="flex justify-between items-center">
           <div
             className={`hidden lg:block text-3xl ${
@@ -37,7 +38,7 @@ function Footer() {
             <span>Back to top</span>
           </button>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

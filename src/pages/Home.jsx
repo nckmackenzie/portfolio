@@ -9,13 +9,14 @@ import { projects } from '../data/data';
 import Contact from '../components/home/contact/Contact';
 import { AlertProvider } from '../context/AlertProvider';
 import Footer from '../components/home/footer/Footer';
+import { Container } from '../components/ui';
 
 function Home() {
   const { appBg } = useTheme();
 
   return (
     <div className={`min-h-screen ${appBg}`}>
-      <div className="container">
+      <Container>
         <Navigation />
         <Hero />
         <TechStack />
@@ -25,7 +26,7 @@ function Home() {
         <AlertProvider>
           <Contact />
         </AlertProvider>
-      </div>
+      </Container>
       <Footer />
     </div>
   );
