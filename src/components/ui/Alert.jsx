@@ -2,8 +2,12 @@ import { GrFormClose } from 'react-icons/gr';
 import React from 'react';
 import { useAlert } from '../../context/AlertProvider';
 
-function Alert({ status }) {
-  const { closeAlert } = useAlert();
+function Alert({ status, msg }) {
+  const { closeAlert, setMessage } = useAlert();
+  const onClickHandler = () => {
+    closeAlert();
+    setMessage(null);
+  };
   const strongText =
     status === 'success'
       ? 'Success!!!'
@@ -27,10 +31,10 @@ function Alert({ status }) {
       className={`w-full p-4 ${bgColor} rounded mb-2 flex items-center justify-between`}
     >
       <p>
-        <strong>{strongText}</strong> {message}
+        <strong>{strongText}</strong> {msg || message}
       </p>
       {(status === 'success' || status === 'error') && (
-        <button className="outline-none" onClick={closeAlert}>
+        <button className="outline-none" onClick={onClickHandler}>
           <GrFormClose size={24} />
         </button>
       )}
