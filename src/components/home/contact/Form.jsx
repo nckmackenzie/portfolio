@@ -106,6 +106,7 @@ function Form() {
             type="submit"
             className="self-start"
             disabled={isLoading}
+            block
           >
             {isLoading ? 'Sending...' : 'Send Message'}
           </Button>
