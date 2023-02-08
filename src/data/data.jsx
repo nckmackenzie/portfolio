@@ -295,8 +295,8 @@ export const projects = [
       {
         review:
           'What was impressive about the developer was how quickly he was able to develop this application for us. We had a timeline and he was able to deliver before the date we had set and the quality of the application was as we expected. Worth every penny we paid for.',
-        name: 'Shabaan Kinyua - Hastings Tyres',
-        position: 'Owner',
+        name: 'Shabaan Kinyua ',
+        position: 'Owner - Hastings Tyres',
         contact: '0725447116',
         rating: 5,
         avatar: 'https://i.postimg.cc/13Pkrxkt/shabz.jpg',
