@@ -4,11 +4,21 @@ import {
   AiOutlineLinkedin,
   AiOutlineApi,
   AiOutlineMail,
+  AiOutlineFileProtect,
 } from 'react-icons/ai';
+import { BiCodeAlt } from 'react-icons/bi';
 import { SiFrontendmentor } from 'react-icons/si';
 import { HiOutlineSpeakerphone } from 'react-icons/hi';
+import { FcSupport } from 'react-icons/fc';
 import { CiDesktop } from 'react-icons/ci';
-import { BsCodeSlash, BsMap, BsPhone } from 'react-icons/bs';
+import { TiSpannerOutline } from 'react-icons/ti';
+import {
+  BsCodeSlash,
+  BsMap,
+  BsPhone,
+  BsChatRightQuote,
+  BsTelephoneInbound,
+} from 'react-icons/bs';
 import html5 from '../assets/html5_icon.svg';
 import css3 from '../assets/css3_icon.svg';
 import js from '../assets/js_icon.svg';
@@ -24,22 +34,27 @@ export const links = [
   {
     name: 'Tech Stack',
     to: '#techstack',
+    icon: <BiCodeAlt size={24} />,
   },
   {
     name: 'Services',
     to: '#services',
+    icon: <TiSpannerOutline size={24} />,
   },
   {
     name: 'Projects',
     to: '#projects',
+    icon: <AiOutlineFileProtect size={24} />,
   },
   {
     name: 'Testimonials',
     to: '#testimonials',
+    icon: <BsChatRightQuote size={24} />,
   },
   {
     name: 'Contact',
     to: '#contact',
+    icon: <BsTelephoneInbound size={24} />,
   },
 ];
 
