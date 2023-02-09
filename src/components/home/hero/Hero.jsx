@@ -18,17 +18,25 @@ function Hero() {
           </span>{' '}
           <span className="block">A Software Developer</span>
         </h1>
+        <p className={`text-sm mb-1 md:text-base ${paragraphText}`}>
+          Am an experienced software developer who has been on the industry for
+          over 5years. I have a wide range of experience with various
+          programming languages, frameworks and architectures, and am able to
+          design and develop high-quality software solutions.
+        </p>
         <p className={`text-sm mb-6 lg:mb-8 md:text-base ${paragraphText}`}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-          pariatur facere sit eaque accusantium dolor! Et error deserunt quis,
-          esse sint repellat cupiditate rerum velit ducimus quos corrupti
-          aliquid asperiores.
+          Am an excellent problem solver and able to quickly identify and
+          resolve complex issues.Am also an effective communicator whos is able
+          to work with a wide variety of stakeholders and teams.
         </p>
         <div className="flex gap-4 mb-8 lg:mb-12">
-          <Button variant="Contained" className="flex items-center gap-2">
+          <a
+            href="#contact"
+            className="flex items-center gap-2 btn btn-primary"
+          >
             <span className="inline-block">Hire me</span>
             <AiOutlineMail size={16} />
-          </Button>
+          </a>
           <Button
             variant="Outlined"
             className={`flex items-center gap-2 ${textClr}`}
