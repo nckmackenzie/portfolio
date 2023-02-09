@@ -24,6 +24,7 @@ function Projects({ projects }) {
     <Section
       title="Portfolio"
       description="Projects i have worked on before."
+      id="projects"
       lgPadding
     >
       <Filters
