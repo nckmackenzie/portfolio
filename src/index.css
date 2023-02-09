@@ -34,4 +34,8 @@
   .input {
     @apply mt-1 border  text-sm rounded focus:ring-primary-200 focus:border-primary-200 block w-full p-2;
   }
+
+  .sidebar {
+    @apply fixed top-0 left-0 w-full h-screen shadow -translate-x-full -translate-y-full transition-all;
+  }
 }
