@@ -10,12 +10,14 @@ import Contact from '../components/home/contact/Contact';
 import { AlertProvider } from '../context/AlertProvider';
 import Footer from '../components/home/footer/Footer';
 import { Container } from '../components/ui';
+import Sidebar from '../components/layout/Sidebar';
 
 function Home() {
   const { appBg } = useTheme();
 
   return (
     <div className={`min-h-screen ${appBg}`}>
+      <Sidebar />
       <Container>
         <Navigation />
         <Hero />
