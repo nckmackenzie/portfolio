@@ -34,10 +34,10 @@ function Form() {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        'service_rgt12bg',
+        'contact_form',
         formRef.current,
-        import.meta.env.VITE_PUBLICK_KEY
+        '0Arts8KMCeUYnzSvf'
       )
       .then(
         result => {
