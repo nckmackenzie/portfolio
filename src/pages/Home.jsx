@@ -11,25 +11,28 @@ import { AlertProvider } from '../context/AlertProvider';
 import Footer from '../components/home/footer/Footer';
 import { Container } from '../components/ui';
 import Sidebar from '../components/layout/Sidebar';
+import { SideBarProvider } from '../context/SideBarProvider';
 
 function Home() {
   const { appBg } = useTheme();
 
   return (
     <div className={`min-h-screen ${appBg}`}>
-      <Sidebar />
-      <Container>
-        <Navigation />
-        <Hero />
-        <TechStack />
-        <Services />
-        <Projects projects={projects} />
-        <Testimonials projects={projects} />
-        <AlertProvider>
-          <Contact />
-        </AlertProvider>
-      </Container>
-      <Footer />
+      <SideBarProvider>
+        <Sidebar />
+        <Container>
+          <Navigation />
+          <Hero />
+          <TechStack />
+          <Services />
+          <Projects projects={projects} />
+          <Testimonials projects={projects} />
+          <AlertProvider>
+            <Contact />
+          </AlertProvider>
+        </Container>
+        <Footer />
+      </SideBarProvider>
     </div>
   );
 }
