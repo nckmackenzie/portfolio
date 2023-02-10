@@ -4,9 +4,11 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { links } from '../../data/data';
 import NavItem from './NavItem';
+import { useSideBar } from '../../context/SideBarProvider';
 
 function Navigation() {
   const { textClr, isDarkMode, toogleTheme } = useTheme();
+  const { openSideBar } = useSideBar();
   return (
     <header className="py-2 lg:py-4 flex items-center justify-between">
       <Link to="/">
@@ -24,6 +26,7 @@ function Navigation() {
             links.map(link => <NavItem key={link.name} {...link} />)}
         </ul>
         <button
+          onClick={openSideBar}
           className={`inline-flex md:hidden ${textClr} border border-solid px-2 py-1 transition-all ${
             isDarkMode ? 'border-primary-100' : 'border-accent-200'
           } rounded hover:scale-105`}
