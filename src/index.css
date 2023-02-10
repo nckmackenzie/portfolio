@@ -36,6 +36,6 @@
   }
 
   .sidebar {
-    @apply fixed top-0 left-0 w-full h-screen shadow -translate-x-full -translate-y-full transition-all;
+    @apply fixed top-0 left-0 w-full h-screen shadow z-40 -translate-x-full -translate-y-full transition-all;
   }
 }
