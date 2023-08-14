@@ -37,21 +37,21 @@ function Hero() {
             <span className="inline-block">Hire me</span>
             <AiOutlineMail size={16} />
           </a>
-          <Button
+          {/* <Button
             variant="Outlined"
             className={`flex items-center gap-2 ${textClr}`}
           >
             <span className="inline-block">Download CV</span>
             <AiOutlineCloudDownload size={16} />
-          </Button>
+          </Button> */}
         </div>
         <FollowMe />
       </div>
-      <img
+      {/* <img
         src={isDesktop ? desktopImage : mobileImage}
         alt="Nicholas Mackenzie"
         className="w-full"
-      />
+      /> */}
     </div>
   );
 }
